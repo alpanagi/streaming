@@ -7,5 +7,6 @@ int main() {
   sdlk::initialize();
   auto window = sdlk::create_window("streaming");
 
-  auto instance = vlk::create_instance();
+  auto instance_extensions = sdlk::get_vulkan_instance_extensions();
+  auto instance = vlk::create_instance(instance_extensions);
 }
