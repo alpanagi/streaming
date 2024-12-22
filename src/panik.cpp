@@ -8,6 +8,9 @@ void panik::crash(const panik::Component &component,
   case Component::Sdl:
     component_name = "SDL";
     break;
+  case Component::Vulkan:
+    component_name = "VULKAN";
+    break;
   }
 
   std::print("[ERROR][{}] {}\n", component_name, message);

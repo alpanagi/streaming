@@ -6,6 +6,7 @@
 namespace panik {
 enum class Component {
   Sdl,
+  Vulkan,
 };
 
 void crash(const Component &, const std::string &message);
