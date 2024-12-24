@@ -17,4 +17,5 @@ target_sources(streaming PRIVATE
   src/sdlk.cpp
   src/panik.cpp
   src/vlk.cpp
+  src/graphics.cpp
 )
